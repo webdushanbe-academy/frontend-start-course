@@ -1,0 +1,14 @@
+.first {
+    width: 100px;
+    min-height: 100px;
+    background:darkorange;
+    margin: 10px;
+}
+
+.parent .first {
+    background: darkorchid;
+}
+
+.parent2 .first {
+    background: khaki;
+}
