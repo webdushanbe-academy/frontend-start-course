@@ -1,14 +1,26 @@
-.first {
-    width: 100px;
-    min-height: 100px;
-    background:darkorange;
-    margin: 10px;
+.parent {
+    width: 625px;
+    height: 200px;
 }
 
-.parent .first {
-    background: darkorchid;
+ul {
+    background: skyblue;
+    padding: 20px;
 }
 
-.parent2 .first {
-    background: khaki;
+ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #eeebeb;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
