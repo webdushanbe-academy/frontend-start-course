@@ -1,7 +1,6 @@
 .parent {
     width: 620px;
     height: 200px;
-    background:chocolate;
 }
 
 ul {
@@ -13,22 +12,20 @@ ul {
 
 ul li {
     display: inline-block;
-    margin: 0 12px;
-    padding: 10px;
-    border: 2px solid black;
+    margin: -2px;
 }
 
-ul li:hover {
+/* ul li:hover {
     background: darkgreen;
-}
+} */
 
 ul li a {
+    padding: 10px;
     text-decoration: none;
     color: #e9e6e0;
 }
 
 ul li a:hover {
     color: #fff;
-    text-decoration: underline;
-    
+    background: darkgreen;
 }
