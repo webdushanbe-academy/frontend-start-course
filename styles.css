@@ -1,26 +1,34 @@
 .parent {
-    width: 625px;
+    width: 620px;
     height: 200px;
+    background:chocolate;
 }
 
 ul {
-    background: skyblue;
-    padding: 20px;
+    min-height: 20px;
+    background:green;
+    list-style: none;
+    padding: 10px;
 }
 
 ul li {
-    list-style: none;
-    margin: 0 15px;
     display: inline-block;
+    margin: 0 12px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+ul li:hover {
+    background: darkgreen;
 }
 
 ul li a {
     text-decoration: none;
-    color: #eeebeb;
-    font-weight: bold;
+    color: #e9e6e0;
 }
 
 ul li a:hover {
     color: #fff;
     text-decoration: underline;
+    
 }
