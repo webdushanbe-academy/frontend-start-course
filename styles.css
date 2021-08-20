@@ -1,46 +1,153 @@
-.social {
-    width: 100px;
-    height: 50px;
+body {
+    background: url('http://portal.tojnet.tj/templates/ftp-portal/images/lines_paint_background_bright.jpg');
+    background-size: cover;
 }
 
-.twitter {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.color-white {
     color: white;
-    background: #00a8ff;
-    padding: 7px;
 }
 
-.twitter:hover {
-    background: #12a1e9;
-    cursor: pointer;
+.color-black {
+    color: black;
 }
 
-.facebook {
-    width: 10px;
-    height: 30%;
-    display: inline-block;
+.h-40px {
+    height: 40px;
+}
+
+.bg-blue {
+    background: #01a4ef;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.px-4 {
+    padding: 0 4px;
+}
+
+.px-8 {
+    padding: 0 8px;
+}
+
+.px-16 {
+    padding: 0 16px;
+}
+
+.pl-4 {
+    padding-left: 4px;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.pl-8i {
+    padding-left: 8px !important;
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.py-4 {
+    padding: 4px 0;
+}
+
+.py-8 {
+    padding: 8px 0;
+}
+
+.py-16 {
+    padding: 16px 0;
+}
+
+.mx-8 {
+    margin: 0 8px;
+}
+
+.my-8 {
+    margin: 8px 0;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border-b-orange {
+    border-bottom: 2px solid darkorange;
+}
+
+/* .menus ul li:hover {
+    background: darkorange;
     color: white;
-    background: #385196;
-    padding: 7px;
-}
-
-.facebook:hover {
-    background: #293d74;
     cursor: pointer;
-}
+} */
 
-.instagram {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
+.menus ul li a:hover {
+    padding: 0 8px;
+    width: 100%;
+    background: darkorange;
     color: white;
-    background: #c8258e;
-    padding: 7px;
-}
-
-.instagram:hover {
-    cursor: pointer;
-    background: #aa1d78;
 }
