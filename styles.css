@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 * {
     font-family: 'Roboto';
     font-size: 20px;
@@ -26,6 +27,14 @@ ul {
     font-size: 1.7rem;
 }
 
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-6xl {
+    font-size: 4.5rem;
+}
+
 /* Header Start */
 
 .header {
@@ -38,7 +47,7 @@ ul {
 
 .navbar {
     display: flex;
-    width: 90%;
+    width: 97%;
     align-items: center;
     height: 50px;
     justify-content: space-around;
@@ -70,4 +79,46 @@ ul {
     display: flex;
     justify-content: flex-end;
     width: 35%;
+}
+
+/* Header End */
+
+/* Cover Start */
+.cover-container {
+    display: flex;
+    justify-content: center;
+    height: 720px;
+}
+
+.cover {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cover-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cover-image img {
+    object-fit: cover;
+}
+
+.cover-text {
+    position: absolute;
+    white-space: nowrap;
+    font-weight: 300;
+    top: 53%;
+    left: 3.75%;
+}
+
+.header-text {
+    /* */
+}
+
+.secondary-text {
+    text-transform: uppercase;
 }
