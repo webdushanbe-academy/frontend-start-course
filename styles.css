@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 
+/* General rules */
 * {
     font-family: 'Roboto';
 }
@@ -16,6 +17,8 @@ ul {
 .container {
     width: 100%;
 }
+
+/* Header Start */
 
 .header {
     display: flex;
@@ -43,4 +46,34 @@ ul {
 .header .menu ul li:hover {
     color: #E38C00;
     cursor: pointer;
+}
+
+/* Header End */
+
+/* Alert Start */
+
+.alert-discount {
+    display: flex;
+    justify-content: center;
+}
+
+.alert-discount .message {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.alert-discount .inner-block-alert {
+    width: 95%;
+    height: 45px;
+    background: #EECFC5;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+}
+
+.icon-close {
+    margin: 0 10px;
 }
