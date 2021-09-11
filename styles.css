@@ -1,14 +1,46 @@
-.first {
-    width: 100px;
-    min-height: 100px;
-    background:darkorange;
-    margin: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    font-family: 'Roboto';
 }
 
-.parent .first {
-    background: darkorchid;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.parent2 .first {
-    background: khaki;
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header .menu {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .start {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.header .menu ul li:hover {
+    color: #E38C00;
+    cursor: pointer;
 }
