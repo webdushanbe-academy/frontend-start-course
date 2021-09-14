@@ -77,3 +77,66 @@ ul {
 .icon-close {
     margin: 0 10px;
 }
+
+/* Alert End */
+
+/* Cover Start */
+
+.outer-cover {
+    display: flex;
+    justify-content: center;
+}
+.cover {
+    width: 95%;
+    height: 800px;
+    position: relative;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cover-information {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    line-height: 3rem;
+}
+
+.cover-information span.small-text {
+    text-transform: uppercase;
+}
+
+.cover-information .big-text {
+    font-size: 50px;
+    word-wrap: break-word;
+    font-weight: 300;
+}
+
+.cover-button {
+    width: 340px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-button .button-orange {
+    width: 100%;
+    height: 100%;
+    color: #01152F;
+    background: #E38C00;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+}
