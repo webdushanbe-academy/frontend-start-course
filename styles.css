@@ -18,6 +18,18 @@ ul {
     width: 100%;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-4xl {
+    font-size: 3.06rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* Header Start */
 
 .header {
@@ -139,4 +151,100 @@ ul {
     border-radius: 50px;
     letter-spacing: 0.05rem;
     font-weight: 400;
+}
+
+/* Cover End */
+
+/* Mid Menu Start */
+
+.mid-menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mid-menu ul {
+    width: 92%;
+    height: 100%;
+    background: #01152F;
+    color: #FCF9F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Mid Menu End */
+
+/* Double Blocks Start */
+
+.double-container {
+    display: flex;
+    justify-content: center;
+}
+
+.double-blocks {
+    display: flex;
+    width: 95%;
+    height: 735px;
+}
+
+.double-blocks .woman-block {
+    width: 50%;
+    background: url("images/woman.png");
+    background-size: cover;
+}
+
+.description {
+    width: 50%;
+    height: 100%;
+    background: #FCF9F2;
+}
+
+.double-blocks .description-block {
+    height: 90%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.double-blocks .description-block p {
+    font-weight: 400;
+}
+
+.double-blocks .description-block .button {
+    width: 285px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #01152F;
+    
+}
+
+.double-blocks .description-block .button a {
+    width: 100%;
+    height: 100%;
+    color: #01152F;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Double Blocks End */
+
+/* Subscription Start */
+
+.subscription {
+    height: 310px;
+    background: #FCF9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.18rem;
+    font-weight: 300;
 }
