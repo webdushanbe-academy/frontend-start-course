@@ -32,7 +32,12 @@ ul {
 }
 
 .text-6xl {
-    font-size: 4.5rem;
+    font-size: 4.375rem;
+    line-height: 1;
+}
+
+.font-light {
+    font-weight: 300;
 }
 
 .text-center {
@@ -41,6 +46,10 @@ ul {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.relative {
+    position: relative;
 }
 
 .line-height-1 {
@@ -267,4 +276,61 @@ ul {
     width: 100%;
     height: 255px;
     object-fit: cover;
+}
+
+/* Stock End */
+
+/* Double Blocks Start */
+
+.double-blocks {
+    width: 100%;
+    height: 620px;
+    display: flex;
+}
+
+.left-side {
+    width: 31%;
+    height: 100%;
+    background: url("images/mitchel.jpeg");
+    background-size: cover;
+}
+
+.right-side {
+    width: 60%;
+    flex-grow: 1;
+    background: #AABAD0;
+
+}
+
+.right-side .button {
+    width: 280px;
+    height: 110px;
+    background: #FFBCBC;
+    position: absolute;
+    bottom: 0;
+}
+
+.right-side .button a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-block {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block > * {
+    line-height: 10px !important;
 }
