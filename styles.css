@@ -420,3 +420,115 @@ ul {
 .no-border {
     border: 0;
 }
+.down {
+    margin: 0 10px;
+
+}
+
+.image {
+    width: 350px;
+    height: 440px;
+    object-fit: cover;
+    border: 2px solid #01152F;
+    border-radius: 40px;
+    position: relative;
+    
+}
+
+.three-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.lonely {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.element {
+   border: 1px solid #01152F;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+.parent {
+display: flex;
+justify-content: flex-end;
+font-size: 30px;
+margin-bottom: -8px;
+}
+.case{
+    width: 100%;
+    height: 50px;
+    color: #01152F;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-transform: uppercase;
+    }
+    .revise {
+        border: 1px solid #01152F;
+        border-radius: 40px;
+       width: 300px;
+    }
+    .up {
+        margin-left: -10px;
+    }
+    .child {
+    width: 580px;
+    margin-left: 60px;
+    margin-top: 40px;
+     }
+     .e1 {
+         font-size: 50px;
+     }
+     .e2{
+         font-size: 20px;
+         font-size: 1.50rem;
+     }
+     .close {
+        display: flex;
+    
+    }
+    .el {
+       border: 1px solid #01152F;
+        margin-top: -635px;
+        margin-left: 600px;
+        position:absolute;
+   
+    }
+    .finish {
+         display: flex;
+        justify-content: center;
+        margin-top: 90px;
+     }
+    .bold {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        font-size: 55px;
+    }
+    .s3{
+        width: 100%;
+        height: 50px;
+        color: #01152F;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        text-transform: uppercase;
+        }
+        .s2 {
+            border: 1px solid #01152F;
+            border-radius: 40px;
+           width: 300px;
+        }
+        .s1{
+            margin-left: 520px;
+            margin-top: 30px;
+        }
+
