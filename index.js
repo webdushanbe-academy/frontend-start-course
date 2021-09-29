@@ -47,13 +47,20 @@ else {
     console.log('Pupil');
 }
 
- var name = 'Вам доступен данный контент';
- var age = '18';
+name = 'Иван';
+age = '18';
+
+if (nam == 'Иванов'){
+    console.log('Вам доступен данный контент')
+}
+else {
+    console.log('Нет доступа')
+}
 
  if (age >= 18) {
      console.log('Вам доступен данный контент')
  }
  else {
-     console.log('Нет доступа')
+     console.log('Ваш возраст не совпадает')
  }
 
