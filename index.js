@@ -46,3 +46,14 @@ else if (age > 21) {
 else {
     console.log('Pupil');
 }
+
+ var name = 'Вам доступен данный контент';
+ var age = '18';
+
+ if (age >= 18) {
+     console.log('Вам доступен данный контент')
+ }
+ else {
+     console.log('Нет доступа')
+ }
+
