@@ -1,4 +1,4 @@
-var name = 'Muhammad';
+var person = 'Muhammad';
 
 var age = 25;
 
@@ -35,3 +35,15 @@ boolean = true, false
 иначе:
     вывод в консоль("Нет доступа")
 */
+
+if (person) {
+    if (age >= 18) {
+        console.log("Вам доступен данный контент");
+    }
+    else {
+        console.log("Ваш возраст не совпадает");
+    }
+}
+else {
+    console.log("Нет доступа");
+}
