@@ -26,23 +26,13 @@ float = 1.5
 boolean = true, false
 */
 
-if (age == 18) {
-    if (name == 'Muhammad') {
-        console.log(name + ' is in 1 course');
-    }
-} 
-else if (age == 19) {
-    console.log('2 course');
-}
-else if (age == 20) {
-    console.log('3 course');
-}
-else if (age == 21) {
-    console.log('4 course');
-}
-else if (age > 21) {
-    console.log('Worker');
-}
-else {
-    console.log('Pupil');
-}
+/*
+если переменная name существует:
+    если переменная age больше или равно 18:
+        вывод в консоль("Вам доступен данный контент")
+    иначе:
+        вывод в консоль("Ваш возраст не совпадает")
+иначе:
+    вывод в консоль("Нет доступа")
+
+*/
