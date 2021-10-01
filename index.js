@@ -65,12 +65,35 @@ console.log(reverse);
 
 console.log(name.reverse()); */
 
-var name = 'Faridun';
+/*
+var student = {
+    name: 'Bilol',
+    age: 14
+};
 
-console.log(name.split('').reverse().join('').toLowerCase());
+console.log(student.age, student.name);
+*/
 
-for (var j = 0; j < 10; ++j) {
-    console.log(name.split('').reverse().join('').toLowerCase());
+students = [
+    {
+	name: 'Muhammad',
+	age: 17
+    },
+    {
+	name: 'Bilol',
+	age: 14,
+    }
+];
+
+/*
+for (student in students) {
+    console.log(student);
+    console.log(students[student].name);
+}
+*/
+for (var student of students) {
+    student.months = student.age * 12;
+    student.reverse = student.name.split('').reverse().join('');
 }
 
-
+console.log(students);
