@@ -1,99 +1,49 @@
+var block = document.querySelector('.block');
+
+
 var students = [
-    //  0          1
-    'Muhammad', 'Bilol'
+	{
+		name: 'Muhammad',
+		age: 17,
+		course: 'Frontend'
+	},
+	{
+		name: 'Abdullah',
+		age: 17,
+		course: 'Frontend'
+	},
+	{
+		name: 'Bilol',
+		age: 14,
+		course: 'Frontend'
+	},
+	{
+		name: 'Faridun',
+		age: 22,
+		course: 'Frontend'
+	},
 ];
 
-let numbers = [];
+var ul = document.createElement('ul');
+
+block.appendChild(ul);
 
 
-/*
-console.log(students[0]);
-console.log(students[1]); 
-*/
-/*
-for (var i = 1; i <= 100; ++i) {
-    numbers.push(i);
-}
-*/
-// i = 0;
-// length = 2;
-// i < length = 1;
-
-/*
-i = i + 1;
-i += 1;
-i++
-++i
-*/
-
-/*
-for (var i = 0; i < students.length; ++i) {
-    console.log(students[i]);
-} 
-*/
-
-/*
-for (var iterator = 0; iterator < numbers.length; ++iterator) {
-    console.log('' + numbers[iterator]);
-}
-*/
-
-/*
-for (initialization; condition; increment/decrement/ending) {
-    statements
-}
-*/
-/*
-var i = 0;
-
-while(i < students.length) {
-    console.log(students[i]);
-
-    ++i;
-}
-*/
-
-var students = 'Muhammad,Bilol,Faridun,Abdullah';
-/*
-var reverse = '';
-
-for (var i = name.length - 1; i >= 0; --i) {
-    reverse += name[i];
-}
-
-console.log(reverse);
-
-console.log(name.reverse()); */
-
-/*
-var student = {
-    name: 'Bilol',
-    age: 14
-};
-
-console.log(student.age, student.name);
-*/
-
-students = [
-    {
-	name: 'Muhammad',
-	age: 17
-    },
-    {
-	name: 'Bilol',
-	age: 14,
-    }
-];
-
-/*
-for (student in students) {
-    console.log(student);
-    console.log(students[student].name);
-}
-*/
 for (var student of students) {
-    student.months = student.age * 12;
-    student.reverse = student.name.split('').reverse().join('');
-}
+	var li = document.createElement('li');
+	li.innerText = "Name: " + student.name;
+	ul.appendChild(li);
 
-console.log(students);
+
+	var ul2 = document.createElement('ul');
+	li.appendChild(ul2);
+
+	var li2 = document.createElement('li');
+	li2.innerText = "Age: " + student.age;
+	var li3 = document.createElement('li');
+	li3.innerText = "Course: " + student.course;
+
+	ul2.appendChild(li2);
+	ul2.appendChild(li3);
+
+}
