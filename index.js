@@ -13,50 +13,78 @@
 //     </li>
 // </ul>
 
+function search(array, element) {
+    if (array.indexOf(element) !== -1) {
+        return array[array.indexOf(element)];
+    } else {
+        return -1;
+    }
+}
+
 var block = document.getElementById('students');
 
 var students = [
-    {
-        name: 'Muhammad',
-        age: 16,
-        course: 'Frontend'
-    },
-    {
-        name: 'Saida',
-        age: 16,
-        course: 'Frontend'
-    },
-    {
-        name: 'Masha',
-        age: 22,
-        course: 'SMM'
-    }
+    'Saida',
+    'Muhammad',
+    'Intizor',
+    'Muhammad',
+    'Bilol',
+    'Faridun',
+    'Abdullah'
 ];
 
 var ul = document.createElement('ul');
+ul.id = "students-list";
+
 block.appendChild(ul);
-for (var student of students) {
-        var li = document.createElement('li');
-        li.innerText = "Name: " + student.name;
-        li.id = student.name;
-        ul.appendChild(li);
 
-        var ul2 = document.createElement('ul');
-        var li2 = document.createElement('li');
-        li2.innerText = "Age: " + student.age;
+for (var s of students) {
+    var li = document.createElement('li');
 
-        var li3 = document.createElement('li');
-        li3.innerText = "Course: " + student.course;
+    li.innerText = s;
 
-        ul2.appendChild(li2);
-        ul2.appendChild(li3);
-
-        li.appendChild(ul2);
+    ul.appendChild(li);
 }
+
+
 
 var student = document.getElementById('student');
 var button = document.getElementById('delete');
 
 button.addEventListener('click', function () {
-    document.getElementById(student.value).remove();
+    var result = search(students, student.value);
+
+    var ulCheck = document.getElementById('students-list');
+
+    if (ulCheck) {
+        ulCheck.remove();
+    }
+
+
+    if (result == parseInt(-1)) {
+        var h1 = document.createElement('h1');
+
+        h1.innerText = "No Result!";
+
+        h1.id = "noresult";
+
+        block.appendChild(h1);
+    } else {
+        var noresult = document.getElementById('noresult');
+
+        if (noresult) {
+            noresult.remove();
+        }
+        var ul = document.createElement('ul');
+        ul.id = "students-list";
+
+        block.appendChild(ul);
+
+        var li = document.createElement('li');
+
+        li.innerText = result;
+
+        ul.appendChild(li);
+    }
+
 });
